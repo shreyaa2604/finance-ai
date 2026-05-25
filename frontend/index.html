@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Finance AI - Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="app-title">💰 Finance AI 💰</h1>
+
+      <section id="form-section">
+        <h2>Add Expense</h2>
+        <div id="status" aria-live="polite" class="status"></div>
+        <form id="expense-form">
+          <label>Salary (Monthly): <input type="number" step="0.01" name="salary" placeholder="e.g., 5000"></label>
+          <label>Amount: <input type="number" step="0.01" name="amount" required></label>
+          <label>Category: <input name="category" required></label>
+          <label>Note: <input name="note"></label>
+          <button type="submit" id="add-expense-btn">Add</button>
+        </form>
+      </section>
+
+      <section id="list-section">
+        <h2>Expenses</h2>
+        <ul id="expenses-list"></ul>
+      </section>
+
+      <section id="planner-section">
+        <h2>Budget Planner</h2>
+        <button id="get-plan">Generate Budget Plan</button>
+        <div id="plan-output" class="planner-card">No plan yet.</div>
+        <div id="chart-wrap">
+          <h3>Expense Distribution</h3>
+          <canvas id="expenses-chart"></canvas>
+        </div>
+      </section>
+
+      <section id="report-section">
+        <h2>Monthly Report</h2>
+        <button id="get-report">Generate Report</button>
+        <div id="report-output" class="report-card">No report yet.</div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+:root{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{max-width:900px;margin:24px auto;padding:0 16px;color:#111}
+main{text-align:center}
+.app-title{font-size:36px;margin:0 0 24px;background:linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;font-weight:700;letter-spacing:2px}
+main h1{font-size:28px;margin-bottom:8px}
+section{margin:16px 0;padding:12px;border:1px solid #eee;border-radius:6px}
+label{display:block;margin:6px 0}
+input{padding:6px;margin-left:8px}
+button{padding:8px 12px;margin-top:8px}
+pre{background:#f7f7f8;padding:12px;border-radius:6px}
+
+.planner-card{padding:12px;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.planner-summary{display:flex;flex-direction:column;gap:12px}
+.planner-top{display:flex;gap:12px;flex-wrap:wrap}
+.planner-total,.planner-savings{background:#f3f6ff;padding:8px;border-radius:6px}
+.planner-cats{margin-top:8px}
+.category-list{display:flex;flex-direction:column;gap:8px}
+.category-item{display:flex;align-items:center;gap:12px;padding:8px;border-radius:6px;background:#fafafa}
+.chip{width:18px;height:18px;border-radius:50%;display:inline-block;flex:0 0 18px}
+.cat-meta{flex:1}
+.cat-name{font-weight:600}
+.cat-values{font-size:0.9rem;color:#555}
+.cat-budget{font-size:0.9rem;color:#333}
+.planner-note{font-size:0.85rem;color:#666}
+
+#chart-wrap{max-width:420px;margin-top:12px}
+#chart-wrap h3{margin:0 0 8px;font-size:1rem;color:#333}
+#expenses-chart{max-width:100%;min-height:320px}
+
+.report-card{padding:16px;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.report-summary{display:flex;flex-direction:column;gap:16px}
+.report-header{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.report-item{background:#f0f4ff;padding:12px;border-radius:6px;font-size:0.95rem}
+.report-item.highlight{background:#d4edda;border:1px solid #c3e6cb}
+.report-breakdown{margin-top:12px}
+.report-breakdown h4{margin:0 0 12px;font-size:0.95rem}
+.breakdown-list{display:flex;flex-direction:column;gap:8px}
+.breakdown-item{display:flex;align-items:center;gap:12px;padding:8px;border-radius:6px;background:#fafafa}
+.breakdown-meta{flex:1}
+.rec-list{margin:8px 0;padding-left:20px}
+.rec-list li{margin:6px 0;font-size:0.9rem;color:#444}
+
+.status{min-height:18px;color:#086; margin-bottom:8px}
+button:disabled{opacity:0.6;cursor:not-allowed}
+
+.expense-item{display:flex;justify-content:space-between;align-items:center;padding:8px;background:#fafafa;border-radius:6px}
+.delete-btn{background:#ff6b6b;color:#fff;border:none;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:0.9rem;margin-left:8px}
+.delete-btn:hover{background:#ff5252}
+.delete-btn:disabled{opacity:0.6;cursor:not-allowed}
